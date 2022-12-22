@@ -1,61 +1,146 @@
 ---
 docname: draft-ietf-temporal-uri-scheme-latest
 title: Temporal URI scheme
-docname: draft-todo-yourname-protocol-latest
+docname: draft-ietf-temporal-uri-scheme-latest
+date: {DATE}
 category: info
 
 ipr: trust200902
 area: General
-workgroup: TODO Working Group
-keyword: Internet-Draft
+workgroup:
+keyword:
+ - temporal
+ - scheme
 
 stand_alone: yes
 smart_quotes: no
-pi: [toc, sortrefs, symrefs]
+pi: [toc, tocindent, sortrefs, symrefs, strict, compact, comments, inline]
 
 author:
  -
-    ins: H. Tschofenig
-    name: Hannes Tschofenig
-    organization: Arm Limited
-    email: hannes.tschofenig@arm.com
+    ins: J. Fuller
+    name: James Fuller
+    organization:
+    city: Prague
+    region:
+    country: Czechia
+    email: jim@webcomposite.com
+    uri: https://jim.fuller.name/
 
 normative:
+  RFC2119:
 
 informative:
 
 
 --- abstract
 
-TODO Abstract
+This document registers the "dt" URI scheme, to unambiguously identify
+a discrete point in time.
+
+--- note_Note_to_Readers
+
+*RFC EDITOR: please remove this section before publication*
+
+The issues list for this draft can be found at
+<https://github.com/xquery/temporal-uri-scheme>.
+
+* [Editor's Copy](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-scheme.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-temporal-uri-scheme)
+* [Working Group
+Draft](https://datatracker.ietf.org/doc/html/draft-ietf-temporal-uri-scheme)
+* [Compare Editor's Copy to Working Group
+Draft](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-scheme.diff)
 
 
 --- middle
 
 # Introduction
 
-TODO Introduction
 
+## Notational Conventions
 
-# Conventions and Definitions
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT",
+"RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this
+document are to be interpreted as
+described in BCP 14 {{!RFC2119}} {{!RFC8174}} when, and only when,
+they appear in all capitals, as
+shown here.
 
-{::boilerplate bcp14-tagged}
+This document uses ABNF {{!RFC5234}}. It also uses the date-time rule
+from {{!RFC3339}}.
 
+# The "temporal" URI Scheme
 
-# Security Considerations
+The "temporal" URI scheme identifies a discrete point in time.
 
-TODO Security
+~~~ abnf
+temporal-URI    = termporal-scheme ":" dt
+temporal-scheme = "dt"
+dt              = date-time
+~~~
+
+See {{RFC3339, Section 5.6.3}} for a definition of date-time.
+
+For example, given the URI:
+~~~ examples
+dt:20221222T162813Z
+~~~
+Would represent a discrete point in time of "2022-12-22T16:28:13Z".
+
+The following examples would also be valid URIs:
+~~~ examples
+dt:2022-12-22T16:28:13Z
+dt:1985-04-12T23:20:50.52Z
+~~~
+
+This RFC explicitly provides no definition of how such URI's might be
+parsed or compared by applications
+using them. For example, it is possible to define two URI's which
+refer to the exact same point in
+time and it is left to consuming application (or some future
+specification) to define what that might
+'mean'.
 
 
 # IANA Considerations
 
-This document has no IANA actions.
+This document registers the following value in the "Uniform Resource
+Identifier (URI) Schemes" registry:
+
+{: vspace="0"}
+Scheme name:
+: dt
+
+Status:
+: provisional
+
+Applications/protocols that use this scheme:
+: none yet
+
+Contact:
+: iesg@iesg.org
+
+Change Controller:
+: IESG
+
+References:
+: (this document)
 
 
+# Security Considerations
 
+TBA
 --- back
 
-# Acknowledgments
+# Acknowledgements
 {:numbered="false"}
 
-TODO acknowledge.
+The definition of date-time is from {{?RFC3339}}.
+
+Normative references
+   [1]  Beckett, D., "RDF/XML Syntax Specification (Revised)", W3C rdf-
+        syntax-grammar, February 2004, <http://www.w3.org/TR/2004/REC-
+        rdf-syntax-grammar-20040210/>.
+
