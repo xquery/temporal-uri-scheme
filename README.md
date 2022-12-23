@@ -1,6 +1,5 @@
 # Temporal URI scheme
 
-
 * [Editor's Copy](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-scheme.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-temporal-uri-scheme)
 * [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-temporal-uri-scheme)

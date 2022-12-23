@@ -57,6 +57,7 @@ Draft](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-
 
 # Introduction
 
+This document defines the URI scheme "dt", which describes resources identified by date-time.
 
 ## Notational Conventions
 
@@ -73,7 +74,7 @@ from {{!RFC3339}}.
 
 # The "temporal" URI Scheme
 
-The "temporal" URI scheme identifies a discrete point in time.
+The "temporal" URI scheme allows for the construction of a URI which represents a discrete point in time.
 
 ~~~ abnf
 temporal-URI    = termporal-scheme ":" dt
@@ -95,13 +96,11 @@ dt:2022-12-22T16:28:13Z
 dt:1985-04-12T23:20:50.52Z
 ~~~
 
-This RFC explicitly provides no definition of how such URI's might be
-parsed or compared by applications
-using them. For example, it is possible to define two URI's which
-refer to the exact same point in
-time and it is left to consuming application (or some future
-specification) to define what that might
-'mean'.
+This RFC intentionally provides no definition of how URI's might be
+parsed or compared by applications using them. For example, it is possible
+to define two URI's which refer to the exact same point in time and it is
+left to consuming application (or some future specification) to define what
+that might 'mean'.
 
 
 # IANA Considerations
@@ -139,8 +138,4 @@ TBA
 
 The definition of date-time is from {{?RFC3339}}.
 
-Normative references
-   [1]  Beckett, D., "RDF/XML Syntax Specification (Revised)", W3C rdf-
-        syntax-grammar, February 2004, <http://www.w3.org/TR/2004/REC-
-        rdf-syntax-grammar-20040210/>.
 
