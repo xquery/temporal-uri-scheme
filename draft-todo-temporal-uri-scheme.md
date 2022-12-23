@@ -1,7 +1,7 @@
 ---
-docname: draft-ietf-temporal-uri-scheme-latest
+docname: draft-todo-temporal-uri-scheme-latest
 title: Temporal URI scheme
-docname: draft-ietf-temporal-uri-scheme-latest
+docname: draft-todo-temporal-uri-scheme-latest
 date: {DATE}
 category: info
 
