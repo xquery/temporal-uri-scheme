@@ -7,7 +7,6 @@ category: info
 
 ipr: trust200902
 area: General
-workgroup:
 keyword:
  - temporal
  - scheme
