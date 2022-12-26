@@ -23,7 +23,7 @@ author:
     organization:
     city: Prague
     region:
-    country: Czechia
+    country: Czech Republic
     email: jim@webcomposite.com
     uri: https://jim.fuller.name/
 
@@ -45,12 +45,12 @@ a discrete point in time.
 The issues list for this draft can be found at
 <https://github.com/xquery/temporal-uri-scheme>.
 
-* [Editor's Copy](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-scheme.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-temporal-uri-scheme)
+* [Editor's Copy](https://xquery.github.io/temporal-uri-scheme/#go.draft-todo-temporal-uri-scheme.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-todo-temporal-uri-scheme)
 * [Working Group
-Draft](https://datatracker.ietf.org/doc/html/draft-ietf-temporal-uri-scheme)
+Draft](https://datatracker.ietf.org/doc/html/draft-todo-temporal-uri-scheme)
 * [Compare Editor's Copy to Working Group
-Draft](https://xquery.github.io/temporal-uri-scheme/#go.draft-ietf-temporal-uri-scheme.diff)
+Draft](https://xquery.github.io/temporal-uri-scheme/#go.draft-todo-temporal-uri-scheme.diff)
 
 
 --- middle
