@@ -1,13 +1,12 @@
 ---
-docname: draft-todo-temporal-uri-scheme-latest
+docname: draft-temporal-uri-scheme-latest
 title: Temporal URI scheme
-docname: draft-todo-temporal-uri-scheme-latest
+docname: draft-temporal-uri-scheme-latest
 date: {DATE}
 category: info
 
 ipr: trust200902
 area: General
-workgroup: TODO Working Group
 keyword:
  - temporal
  - scheme
@@ -47,11 +46,6 @@ The issues list for this draft can be found at
 
 * [Editor's Copy](https://xquery.github.io/temporal-uri-scheme/#go.draft-todo-temporal-uri-scheme.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-todo-temporal-uri-scheme)
-* [Working Group
-Draft](https://datatracker.ietf.org/doc/html/draft-todo-temporal-uri-scheme)
-* [Compare Editor's Copy to Working Group
-Draft](https://xquery.github.io/temporal-uri-scheme/#go.draft-todo-temporal-uri-scheme.diff)
-
 
 --- middle
 
